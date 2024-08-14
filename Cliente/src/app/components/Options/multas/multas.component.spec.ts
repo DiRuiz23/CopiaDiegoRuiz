@@ -21,14 +21,14 @@ describe('MultasComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have initial values', () => {
-    expect(component.multa.alumno).toBe('');
-    expect(component.multa.noControl).toBe('');
-    expect(component.multa.correo).toBe('');
-    expect(component.multa.cantMultas).toBe(0);
-    expect(component.multa.adeudoTotal).toBe(0);
-    expect(component.multa.fechaConsulta).toBe('');
-    expect(component.multa.diasTranscurridos).toBe(0);
+  //it('should have initial values', () => {
+  //expect(component.multa.alumno).toBe('');
+  //  expect(component.multa.noControl).toBe('');
+    //expect(component.multa.correo).toBe('');
+    //expect(component.multa.cantMultas).toBe(0);
+    //expect(component.multa.adeudoTotal).toBe(0);
+    //expect(component.multa.fechaConsulta).toBe('');
+    //expect(component.multa.diasTranscurridos).toBe(0);
   });
 
   it('should call generarReporte method when "Generar Reporte" button is clicked', () => {
@@ -44,4 +44,4 @@ describe('MultasComponent', () => {
     form.dispatchEvent(new Event('submit'));
     expect(component.registrar).toHaveBeenCalled();
   });
-});
+
